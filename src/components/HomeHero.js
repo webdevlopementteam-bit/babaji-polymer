@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import Icon from "./Icon";
 
 // Background photos: public/images/home/hero-food.webp, hero-polymer.webp, hero-sheet.webp.
@@ -58,7 +58,7 @@ const panels = [
   },
   {
     href: "/plastic-caps",
-    image: "/images/home/cap-handle.png",
+    image: "/images/home/cap-handle.webp",
     alt: "Colourful plastic caps and handles for packaging",
     first: "Plastic",
     rest: " Caps",

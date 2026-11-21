@@ -9,7 +9,7 @@ const jakarta = Plus_Jakarta_Sans({ variable: "--font-jakarta", subsets: ["latin
 
 export const metadata = {
   title: {
-    default: "Babaji Group | Food Products, Polysheets & PVC Compounds",
+    default: "Babaji Group | Food Products, Polymer Compounds, Polysheets & Plastic Caps",
     template: "%s | Babaji Group",
   },
   description:
@@ -22,6 +22,9 @@ export const metadata = {
     "ESD HIPS sheets",
     "PVC compounds",
     "polymer compound",
+    "plastic caps",
+    "PCO caps",
+    "CTC caps",
     "Bahadurgarh",
     "Najafgarh",
   ],

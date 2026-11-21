@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import Counter from "@/components/Counter";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
@@ -10,7 +10,7 @@ import { achievements, businesses, group, journey, mission, vision } from "@/lib
 export const metadata = {
   title: "Our Group",
   description:
-    "Babaji Group — a diversified business group since 1983, with four businesses: food products, PET & HIPS polysheets and PVC compounds. One Group. Four Industries. Endless Possibilities.",
+    "Babaji Group — a diversified business group since 1983, with four businesses: food products, polymer compounds, PET & HIPS polysheets and plastic caps. One Group. Four Industries. Endless Possibilities.",
 };
 
 const values = [
@@ -36,7 +36,7 @@ export default function AboutPage() {
           commitment, we serve diverse industries and households across India.
         </p>
         <p>
-          From food essentials under the Babaji Brand to high-performance polymer compounds, durable sheet solutions and
+          From food essentials under the Babaji Group to high-performance polymer compounds, durable sheet solutions and
           reliable plastic closures, our four business verticals reflect our commitment to quality, innovation and
           long-term partnerships.
         </p>
@@ -55,7 +55,7 @@ export default function AboutPage() {
         <Image src="/images/poly/sheets-rolls.webp" alt="Polysheets" fill sizes="(min-width:1024px) 17vw, 33vw" className="object-cover" />
       </div>
       <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-mist">
-        <Image src="/images/home/cap-handle.png" alt="Plastic caps" fill sizes="(min-width:1024px) 17vw, 33vw" className="object-cover object-bottom" />
+        <Image src="/images/home/cap-handle.webp" alt="Plastic caps" fill sizes="(min-width:1024px) 17vw, 33vw" className="object-cover object-bottom" />
       </div>
     </Reveal>
   </div>

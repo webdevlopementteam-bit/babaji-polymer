@@ -14,6 +14,7 @@ const options = [
   ["hips-sheets", "HIPS Sheets", "polymer"],
   ["thermoformed-trays", "Thermoformed Trays", "polymer"],
   ["pvc-compounds", "PVC Compounds (Polymer Compound)", "polymer"],
+  ["plastic-caps", "Plastic Caps & Closures", "food"],
   ["career", "Career / Job Application", "food"],
   ["other", "Other Enquiry", "food"],
 ];

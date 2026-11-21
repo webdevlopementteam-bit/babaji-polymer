@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { businesses, group } from "@/lib/group";
 import { accent } from "./biz";
 import Icon from "./Icon";
 import Logo from "./Logo";
+import { SITE } from "@/lib/sites";
 
 const links = [
   { href: "/", label: "Home" },
@@ -33,6 +34,7 @@ export default function Header() {
   }, []);
 
   const isActive = (l) => {
+    if (SITE !== "main") return Boolean(l.menu);
     if (l.menu) return businesses.some((b) => pathname.startsWith(b.href));
     return l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
   };

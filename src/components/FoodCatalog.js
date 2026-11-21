@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import { useState } from "react";
 import { foodCategories, foodProducts } from "@/lib/group";
 

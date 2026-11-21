@@ -1,4 +1,14 @@
-# Apache / cPanel hosting for the static export in /out.
+# Apache / cPanel hosting for the static export in /deploy.
+# Force https, and www on the main domain (subdomains stay without www).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^babajigroup\.com$ [NC]
+  RewriteRule ^ https://www.babajigroup.com%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
 ErrorDocument 404 /404.html
 DirectoryIndex index.html
 

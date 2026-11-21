@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-// Babaji Group logo (public/images/logo-group.webp, trimmed from logo.png). `width` sets the display width.
+// Babaji Group logo (public/images/logo-group.webp, trimmed from the original logo). `width` sets the display width.
 export default function Logo({ width = 84, className = "" }) {
   const height = Math.round((width * 398) / 600);
   return (

@@ -64,8 +64,8 @@ export default async function ProductPage({ params }) {
                 <Button href={`/contact?product=${product.slug}`} variant="blue">
                   Request Sample / Quote <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" />
                 </Button>
-                <a href={`tel:${group.phones[1].tel}`} className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-6 py-3.5 text-sm font-semibold text-navy hover:border-navy">
-                  <Icon name="call" className="h-4 w-4" /> {group.phones[1].display}
+                <a href={`tel:${group.phones[0].tel}`} className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-6 py-3.5 text-sm font-semibold text-navy hover:border-navy">
+                  <Icon name="call" className="h-4 w-4" /> {group.phones[0].display}
                 </a>
               </div>
             </Reveal>

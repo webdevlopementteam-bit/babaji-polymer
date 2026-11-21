@@ -8,7 +8,7 @@ import { group, offices } from "@/lib/group";
 
 export const metadata = {
   title: "Contact Us",
-  description: "Contact Babaji Group for food products, PET & HIPS polysheets and PVC compounds — distributorship, bulk orders, quotes and product support.",
+  description: "Contact Babaji Group for food products, polymer compounds, PET & HIPS polysheets and plastic caps — distributorship, bulk orders, quotes and product support.",
 };
 
 export default function ContactPage() {
@@ -54,7 +54,7 @@ export default function ContactPage() {
           <Reveal delay={100} className="h-fit rounded-3xl border border-line bg-white p-5 shadow-lift sm:p-8 lg:sticky lg:top-32">
             <Eyebrow>Send us a message</Eyebrow>
             <h2 className="mt-2 text-2xl font-extrabold sm:text-3xl">Drop Your <span className="text-brand-red">Enquiry</span></h2>
-            <p className="mt-2 mb-6 text-sm text-steel">Your enquiry goes straight to the right team — food products to our Najafgarh office, polysheets &amp; PVC to Bahadurgarh.</p>
+            <p className="mt-2 mb-6 text-sm text-steel">Your enquiry goes straight to the right team — food products and plastic caps to our Najafgarh office, polysheets &amp; PVC to Bahadurgarh.</p>
             <Suspense fallback={<ContactForm />}>
               <ContactFormFromUrl />
             </Suspense>

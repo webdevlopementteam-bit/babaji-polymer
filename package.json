@@ -4,7 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/build-sites.mjs",
+    "build:main": "node scripts/build-sites.mjs main",
+    "build:food": "node scripts/build-sites.mjs food",
+    "build:polymer": "node scripts/build-sites.mjs polymer",
+    "build:polysheet": "node scripts/build-sites.mjs polysheet",
+    "build:caps": "node scripts/build-sites.mjs caps",
     "start": "next start",
     "lint": "eslint"
   },

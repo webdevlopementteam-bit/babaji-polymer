@@ -6,7 +6,7 @@ import { group } from "@/lib/group";
 
 export const metadata = {
   title: "Career",
-  description: "Build your career with Babaji Group — food products, polysheets and PVC compounds. Send us your CV.",
+  description: "Build your career with Babaji Group — food products, polymer compounds, polysheets and plastic caps. Send us your CV.",
 };
 
 const why = [
@@ -21,7 +21,7 @@ const areas = ["Production & Operations", "Quality Control & Lab", "Sales & Busi
 export default function CareerPage() {
   return (
     <>
-      <PageHeader eyebrow="Career" title="Build Your Future" highlight="With Babaji Group" text="We are always looking for committed people to grow with us across food products, polysheets and PVC compounds." image="/images/poly/mfg-extrusion.webp" crumbs={[{ label: "Career" }]} />
+      <PageHeader eyebrow="Career" title="Build Your Future" highlight="With Babaji Group" text="We are always looking for committed people to grow with us across food products, polymer compounds, polysheets and plastic caps." image="/images/poly/mfg-extrusion.webp" crumbs={[{ label: "Career" }]} />
 
       <section className="py-12 sm:py-16">
         <div className="container-x">

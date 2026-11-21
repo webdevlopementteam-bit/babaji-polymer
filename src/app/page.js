@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import BusinessTabs from "@/components/BusinessTabs";
 import ContactForm from "@/components/ContactForm";
 import Counter from "@/components/Counter";
@@ -49,7 +49,7 @@ export default function Home() {
       {/* About — background: public/images/home/about-bg.webp */}
       <section className="relative overflow-hidden bg-white">
         <div className="absolute inset-y-0 right-0 left-[calc(max(24px,(100%-1600px)/2)+420px)] hidden lg:block">
-          <Image src="/images/home/about-home.png" alt="Babaji Group reception with food products, PVC compound granules and polysheets" fill sizes="100vw" className="object-cover object-[80%_center] 2xl:object-[58%_center]" />
+          <Image src="/images/home/about-home.webp" alt="Babaji Group reception with food products, PVC compound granules and polysheets" fill sizes="100vw" className="object-cover object-[80%_center] 2xl:object-[58%_center]" />
           <div className="absolute inset-y-0 left-0 w-[38%] bg-gradient-to-r from-white via-white/60 to-transparent" />
           <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-white/70 to-transparent" />
           <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white/50 to-transparent" />
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative aspect-[16/10] lg:hidden">
-          <Image src="/images/home/about-home.png" alt="" fill sizes="100vw" className="object-cover object-center" />
+          <Image src="/images/home/about-home.webp" alt="" fill sizes="100vw" className="object-cover object-center" />
         </div>
       </section>
 

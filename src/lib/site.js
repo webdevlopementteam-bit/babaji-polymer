@@ -2,11 +2,11 @@ export const company = {
   name: "Babaji Udyog Pvt. Ltd.",
   group: "Babaji Group",
   tagline: "One Trust, One Tradition — With Babaji Group",
-  phone: "8076267027",
-  phoneDisplay: "+91 80762 67027",
+  phone: "8384039200",
+  phoneDisplay: "+91 83840 39200",
   email: "nationalhead.bupl@gmail.com",
   address: "Plot No. 88C, Sector 16, Bahadurgarh, Haryana - 124507",
-  whatsapp: "918076267027",
+  whatsapp: "918384039200",
 };
 
 export const esdClasses = [

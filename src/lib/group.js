@@ -8,10 +8,11 @@ export const group = {
   since: 1983,
   phones: [
     { display: "+91 83840 39200", tel: "+918384039200" },
-    { display: "+91 80762 67027", tel: "+918076267027" },
   ],
   emails: ["babajigroupofficial@gmail.com", "nationalhead.bupl@gmail.com"],
-  instagram: "https://www.instagram.com/babajibrand",
+  instagram: "https://www.instagram.com/babajigroupofficial/",
+  facebook: "https://www.facebook.com/babajigroupofficial/",
+  youtube: "https://www.youtube.com/@babajigroup4693",
   hours: "Mon – Sat, 9:30 AM – 6:30 PM",
 };
 
@@ -28,7 +29,7 @@ export const offices = [
     title: "Polysheets & PVC Compounds — Works",
     company: "Babaji Udyog Pvt. Ltd.",
     address: "Plot No. 88C, Sector 16, Bahadurgarh, Haryana - 124507",
-    phone: group.phones[1],
+    phone: group.phones[0],
     email: "nationalhead.bupl@gmail.com",
     map: "Sector 16, Bahadurgarh, Haryana 124507",
   },
@@ -36,7 +37,7 @@ export const offices = [
     title: "Babaji Udyog — Ganaur Unit",
     company: "Babaji Udyog Pvt. Ltd.",
     address: "Killa No. 27/11/1, 11/2, 20/1, 20/2, 38/15/2, 16/1, Near DICT Main Gate, Delhi Panipat Expressway, Vill. Panchi Gujran, Ganaur, Sonipat, Haryana - 131101",
-    phone: group.phones[1],
+    phone: group.phones[0],
     email: "nationalhead.bupl@gmail.com",
     map: "Panchi Gujran, Ganaur, Sonipat, Haryana 131101",
   },
@@ -98,14 +99,14 @@ export const businesses = [
   },
     {
     key: "caps",
-    card: { image: "/images/home/cap-handle.png", first: "Plastic", rest: " Caps", tagline: "Reliable Closures for Every Need", text: "A wide range of high-quality plastic caps designed for safety, sealing and long-lasting performance across various applications." },
+    card: { image: "/images/home/cap-handle.webp", first: "Plastic", rest: " Caps", tagline: "Reliable Closures for Every Need", text: "A wide range of high-quality plastic caps designed for safety, sealing and long-lasting performance across various applications." },
     name: "Plastic Caps",
     label: "Caps & Closures",
     tagline: "Quality Plastic Caps for Diverse Packaging Needs",
     href: "/plastic-caps",
     color: "red",
     icon: "cap",
-    image: "/images/home/cap-handle.png",
+    image: "/images/home/cap-handle.webp",
     text: "PCO, CTC, spout and water caps for oil, juice, beverage and water packaging, trusted by leading brands.",
     features: [
       { icon: "shield", label: "Leak Proof" },
@@ -156,7 +157,7 @@ export const journey = [
   { year: "1983", title: "The beginning", text: "Babaji Brand Oil Industries starts out in Najafgarh, Delhi, with a single promise — honest quality at a fair price." },
   { year: "1990s", title: "Building the base", text: "Steady growth across North India as families and retailers make Babaji a regular name in their kitchens." },
   { year: "2000s", title: "Scaling up", text: "The facility expands to 2 acres and modern oil processing technology is brought in." },
-  { year: "Today", title: "One group, four industries", text: "Food products, plus PET & HIPS polysheets and PVC compounds through Babaji Udyog Pvt. Ltd. in Bahadurgarh." },
+  { year: "Today", title: "One group, four industries", text: "Food products, plus PET & HIPS polysheets and PVC compounds through Babaji Udyog Pvt. Ltd., and plastic caps & closures for leading brands." },
 ];
 
 export const facilities = [

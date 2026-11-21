@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
 import { BannerHeader, Button, CTA, IconBadge, SectionHead } from "@/components/ui";
@@ -37,7 +37,7 @@ export default function PVCPage() {
             <SectionHead color="gold" eyebrow="PVC Compound Solutions" title="Premium PVC Compounds —" highlight="Better Materials, Brighter Possibilities" text="Manufactured for strength, flexibility & industrial performance. Formulated for consistency and durability — with custom colours and grades on request." />
             <Reveal delay={100} className="mt-7 flex flex-wrap gap-3">
               <Button href="/contact?product=pvc-compounds" variant="gold">Enquire Now <Icon name="arrow" className="h-4 w-4" /></Button>
-              <a href={`tel:${group.phones[1].tel}`} className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3.5 text-sm font-semibold text-navy hover:border-navy"><Icon name="call" className="h-4 w-4" /> {group.phones[1].display}</a>
+              <a href={`tel:${group.phones[0].tel}`} className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3.5 text-sm font-semibold text-navy hover:border-navy"><Icon name="call" className="h-4 w-4" /> {group.phones[0].display}</a>
             </Reveal>
           </div>
           <Reveal delay={100} className="relative aspect-[16/10] overflow-hidden rounded-3xl">

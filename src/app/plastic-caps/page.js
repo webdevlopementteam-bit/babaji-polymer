@@ -1,21 +1,21 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import Icon from "@/components/Icon"; // path apna adjust kar lena
 import CapGallery from "./CapGallery"; // app/plastic-caps/CapGallery.jsx
 
 export const metadata = {
-  title: "Plastic Caps & Closures | Babaji Group",
+  title: "Plastic Caps & Closures",
   description:
     "PCO caps, spout caps, CTC single & double caps, water caps and more. Quality plastic caps for diverse packaging needs from Babaji Group.",
 };
 
 /* ---------- IMAGES ----------
-   Banner:    public/images/caps-banner.png
+   Banner:    public/images/caps-banner.webp
    Category:  public/images/caps/<folder>/1.webp, 2.webp ...  (count = kitni images hain)
 */
-const BANNER = "/images/cap-banner.png";
+const BANNER = "/images/cap-banner.webp";
 const imgs = (folder, count) =>
-  Array.from({ length: count }, (_, i) => `/images/caps/${folder}/${i + 1}.png`);
+  Array.from({ length: count }, (_, i) => `/images/caps/${folder}/${i + 1}.webp`);
 
 const categories = [
   {
@@ -68,11 +68,11 @@ const features = [
 ];
 
 const clients = [
-  { name: "Dabur", image: "/images/brands/dabur.png" },
-  { name: "Jivo", image: "/images/brands/jivo.png" },
-  { name: "Mahesh", image: "/images/brands/mahesh.png" },
-  { name: "Bunge", image: "/images/brands/bunge.png" },
-  { name: "Patanjali", image: "/images/brands/patanjali.png" },
+  { name: "Dabur", image: "/images/brands/dabur.webp" },
+  { name: "Jivo", image: "/images/brands/jivo.webp" },
+  { name: "Mahesh", image: "/images/brands/mahesh.webp" },
+  { name: "Bunge", image: "/images/brands/bunge.webp" },
+  { name: "Patanjali", image: "/images/brands/patanjali.webp" },
 ];
 
 const makes = [
@@ -137,7 +137,7 @@ export default function PlasticCapsPage() {
                 View Categories <Icon name="arrow" className="h-4 w-4" />
               </a>
               <Link
-                href="/contact"
+                href="/contact?product=plastic-caps"
                 className="inline-flex items-center rounded-full border border-navy/30 bg-white/70 px-7 py-3.5 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
               >
                 Get a Quote
@@ -200,7 +200,7 @@ export default function PlasticCapsPage() {
                   ))}
                 </ul>
                 <Link
-                  href={`/contact?enquiry=${encodeURIComponent(c.title)}`}
+                  href="/contact?product=plastic-caps"
                   className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-red px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:gap-3 hover:bg-brand-red-dark"
                 >
                   Enquire Now <Icon name="arrow" className="h-4 w-4" />
@@ -266,13 +266,13 @@ export default function PlasticCapsPage() {
           </div>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/contact"
+              href="/contact?product=plastic-caps"
               className="inline-flex items-center gap-2 rounded-full bg-brand-red px-6 py-3 text-sm font-semibold text-white transition hover:gap-3 hover:bg-brand-red-dark"
             >
               Get In Touch <Icon name="arrow" className="h-4 w-4" />
             </Link>
             <a
-              href="https://wa.me/918076267027?text=Hello%20Babaji%20Group%2C%20I%20would%20like%20to%20enquire%20about%20plastic%20caps."
+              href="https://wa.me/918384039200?text=Hello%20Babaji%20Group%2C%20I%20would%20like%20to%20enquire%20about%20plastic%20caps."
               className="inline-flex items-center rounded-full bg-[#f2b632] px-6 py-3 text-sm font-semibold text-navy transition hover:brightness-95"
             >
               WhatsApp Us

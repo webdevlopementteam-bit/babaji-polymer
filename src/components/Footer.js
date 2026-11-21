@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import { businesses, group, offices } from "@/lib/group";
 import Icon from "./Icon";
 import Logo from "./Logo";
@@ -26,7 +26,13 @@ export default function Footer() {
             <a href={group.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-brand-red">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" /></svg>
             </a>
-            <a href={`https://wa.me/${group.phones[1].tel.replace("+", "")}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-brand-red">
+            <a href={group.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-brand-red">
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2V2.2L14.3 2C11.5 2 10 3.7 10 6.4v2.1H7.2V12H10v10h4V12h2.8l.4-3.5H14z" /></svg>
+            </a>
+            <a href={group.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-brand-red">
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor"><path d="M22.5 7.2a2.8 2.8 0 00-2-2C18.8 4.7 12 4.7 12 4.7s-6.8 0-8.5.5a2.8 2.8 0 00-2 2C1 8.9 1 12 1 12s0 3.1.5 4.8a2.8 2.8 0 002 2c1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5a2.8 2.8 0 002-2c.5-1.7.5-4.8.5-4.8s0-3.1-.5-4.8zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z" /></svg>
+            </a>
+            <a href={`https://wa.me/${group.phones[0].tel.replace("+", "")}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-brand-red">
               <Icon name="whatsapp" className="h-5 w-5" />
             </a>
           </div>
@@ -75,7 +81,12 @@ export default function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col justify-between gap-2 py-5 text-xs text-white/50 sm:flex-row">
-          <span>© {new Date().getFullYear()} {group.name}. All Rights Reserved.</span>
+          <span>
+            © {new Date().getFullYear()} {group.name}. All Rights Reserved. Powered by{" "}
+            <a href="https://www.cybertricksmedia.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 underline-offset-2 hover:text-white hover:underline">
+              Cybertricksmedia Pvt. Ltd.
+            </a>
+          </span>
           <span>{group.tagline}</span>
         </div>
       </div>

@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 const quality = [
-  { icon: "factory", title: "In-house manufacturing", text: "Our own plants for food products, sheets and compounds." },
+  { icon: "factory", title: "In-house manufacturing", text: "Our own plants for food products, sheets, compounds and caps." },
   { icon: "gear", title: "Process control", text: "Consistent thickness, finish and forming; consistent purity and taste." },
   { icon: "search", title: "Batch traceability", text: "Documented from raw material to dispatch." },
   { icon: "flask", title: "In-house labs", text: "Every batch tested before it leaves the plant." },

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
 import { BannerHeader, Button, CTA, ESDScale, Eyebrow, IconBadge, SectionHead } from "@/components/ui";
@@ -308,7 +308,7 @@ export default function PolysheetsPage() {
               <p className="mt-2 max-w-xl text-white/85">Tell us your application, thickness and quantity — our team will recommend the right PET or HIPS grade and share pricing.</p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <a href={`tel:${group.phones[1].tel}`} className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-sky"><Icon name="call" className="h-4 w-4" /> Call {group.phones[1].display}</a>
+              <a href={`tel:${group.phones[0].tel}`} className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-sky"><Icon name="call" className="h-4 w-4" /> Call {group.phones[0].display}</a>
               <Link href="/contact?product=esd-pet-sheets" className="inline-flex items-center gap-2 rounded-full border border-white/50 px-6 py-3.5 text-sm font-semibold text-white hover:bg-white/10">Send an Enquiry <Icon name="arrow" className="h-4 w-4" /></Link>
             </div>
           </Reveal>

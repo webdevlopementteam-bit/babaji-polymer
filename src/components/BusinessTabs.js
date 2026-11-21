@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/SiteLink";
 import { useState } from "react";
 import { businesses, foodCategories, foodProducts, polyRange, pvcProducts } from "@/lib/group";
 import { accent } from "./biz";
@@ -14,11 +14,11 @@ const items = {
   sheet: polyRange.map((p) => ({ name: p.name, sub: p.chips.join(" · "), image: p.image, contain: true })),
   pvc: pvcProducts.map((p) => ({ name: p.name, sub: p.text, image: p.image })),
   caps: [
-    { name: "PCO Caps", sub: "1810 Full Neck", image: "/images/caps/pco-caps/1.png", contain: true },
-    { name: "Spout Caps", sub: "42 mm · Press fit & Ring fit", image: "/images/caps/spout-caps/1.png", contain: true },
-    { name: "CTC Cap", sub: "36 mm", image: "/images/caps/ctc-36mm/1.png", contain: true },
-    { name: "CTC Double Caps", sub: "29 mm · 3.3 gram", image: "/images/caps/ctc-double/1.png", contain: true },
-    { name: "Water Caps", sub: "26 mm & 22 mm · Flat Dome W-18", image: "/images/caps/water-caps/1.png", contain: true },
+    { name: "PCO Caps", sub: "1810 Full Neck", image: "/images/caps/pco-caps/1.webp", contain: true },
+    { name: "Spout Caps", sub: "42 mm · Press fit & Ring fit", image: "/images/caps/spout-caps/1.webp", contain: true },
+    { name: "CTC Cap", sub: "36 mm", image: "/images/caps/ctc-36mm/1.webp", contain: true },
+    { name: "CTC Double Caps", sub: "29 mm · 3.3 gram", image: "/images/caps/ctc-double/1.webp", contain: true },
+    { name: "Water Caps", sub: "26 mm & 22 mm · Flat Dome W-18", image: "/images/caps/water-caps/1.webp", contain: true },
   ],
 };
 
